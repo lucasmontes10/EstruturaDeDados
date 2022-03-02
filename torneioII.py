@@ -20,8 +20,6 @@ def torneio(m, mat):
         for i in range(1, p + 1):
             for j in range(1, p + 1):
                 mat[i+p][j] = mat[i][j] + p
-                # mat[i][j+p] = p + 1 + (i + j - 2) % p
-                # mat[p + 1 + (i + j - 2) % p][j + p] = i
                 mat[i][j+p] = m - (j - i + m) % p
                 mat[m - (j - i + m) % p][j + p] = i
 
