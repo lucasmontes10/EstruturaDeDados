@@ -21,6 +21,8 @@ def construir_Pascal(n, mat):
                 # 1 2 1
                 # 1 3 3 1
                 mat[i][j] = mat[i-1][j-1] + mat[i-1][j]
+                #Utilizando a estrategia de olhar para a linha de cima, ja calculada
+                #e os limites das linhas se repetem
 
 n = int(input("Entre com a ordem da matriz:"))
 mat = []
