@@ -1,6 +1,3 @@
-from glob import glob
-
-
 def permCircular(np):
     global n
     global quant
